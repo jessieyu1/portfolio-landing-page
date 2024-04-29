@@ -1,0 +1,306 @@
+/* styles.css */
+
+:root {
+  --background-color: #e8f9f5;
+  --text-color: #130f49;
+  --link-color: #007bff;
+  --link-hover-color: #0056b3;
+  --header-background: #fff;
+  --header-text: #130f49;
+  --blue-color: #a5a6ff;
+  --font-karla: "Karla", sans-serif;
+}
+
+.dark-mode {
+  --background-color: #222;
+  --text-color: #f5f5f5;
+  --link-color: #82c1ff;
+  --link-hover-color: #a7d5ff;
+  --header-background: #333;
+  --header-text: #f5f5f5;
+}
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+form {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  flex: 0 0 20%;
+  background-color: var(--header-background);
+  color: var(--header-text);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-bottom: 20px; */
+}
+
+.profile-pic {
+  width: 77px;
+  height: 77px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sidebar nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.sidebar nav li {
+  margin-bottom: 15px;
+}
+
+.sidebar nav a {
+  color: var(--header-text);
+  text-decoration: none;
+}
+
+.sidebar nav button {
+  background: transparent;
+  border: none;
+  color: var(--header-text);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.sidebar-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 200px;
+}
+
+.sidebar-footer {
+  padding: 50px;
+  font-size: 16px;
+  font-family: var(--font-karla);
+}
+
+.content {
+  overflow-y: auto;
+  width: 80%;
+}
+
+main {
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 40px;
+  height: 100vh;
+}
+
+.project {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+footer {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 10px;
+}
+
+/* Home section styles */
+.home-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-left: 50px;
+}
+
+.home-desc {
+  flex: 0 0 50%;
+  margin-right: 20px;
+}
+
+.home-desc-title {
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.home-desc-para {
+  max-width: 400px;
+}
+
+.home-desc-buttons {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  width: 200px;
+  margin: 50px 0;
+}
+
+.home-desc-contact {
+  border-left: 4px solid orange;
+  padding: 10px;
+}
+
+.home-image {
+  flex: 0 0 50%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.home-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: var(--header-background);
+  color: var(--text-color);
+}
+
+.special-bg {
+  color: var(--blue-color);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .sidebar {
+    flex: 0 0 auto;
+  }
+
+  .profile {
+    display: none; /* Hide the profile section */
+  }
+  .home-desc-title {
+    display: none;
+  }
+
+  .sidebar-footer {
+    display: none;
+  }
+
+  .content {
+    flex: 1;
+    overflow-y: visible;
+  }
+}
+
+/* CSS */
+.button-51 {
+  background-color: transparent;
+  border: 1px solid #266db6;
+  box-sizing: border-box;
+  color: #00132c;
+  font-family: "Avenir Next LT W01 Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 16px 23px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-51:hover,
+.button-51:active {
+  outline: 0;
+}
+
+.button-51:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button-51:before {
+  background-color: #cbccf8;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+
+.button-51:hover:before {
+  background-color: var(--blue-color);
+}
+
+@media (min-width: 768px) {
+  .button-51 {
+    padding: 16px 32px;
+  }
+}

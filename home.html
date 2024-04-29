@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robert Elisc</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- social media -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="profile">
+          <div class="profile-pic">
+            <img src="./profile.png" alt="Your Name" />
+          </div>
+          <h2>Robert Elisc</h2>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <button id="theme-toggle" aria-label="Toggle light/dark mode">
+                <span id="theme-icon" aria-hidden="true">🌙 Dark Mode</span>
+              </button>
+            </li>
+            <li><a href="#home" class="special-bg">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#skills">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="sidebar-footer">
+          <div class="sidebar-social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+          </div>
+          <p>Copyright © 2024 Robert Elisc. All rights reserved.</p>
+        </div>
+      </div>
+      <div class="content">
+        <main>
+          <section id="home">
+            <div class="home-content">
+              <div class="home-desc">
+                <div class="home-desc-title">
+                  <h3>Hi, I'm <span class="special-bg">Elisc!</span></h3>
+                  <h3>Creative Designer</h3>
+                  <h3>Based in Florida</h3>
+                </div>
+                <p class="home-desc-para">
+                  I'm a Florida based web designer & front‑end developer with
+                  <span class="special-bg">10+ years</span> of experience.
+                </p>
+                <div class="home-desc-buttons">
+                  <button class="button-51" role="button">
+                    Got a project?
+                  </button>
+                </div>
+                <div class="home-desc-contact">
+                  <p>+77 022 444 05 05</p>
+                  <p>support@elisc.com</p>
+                  <p>Ave Street Avenue, New York</p>
+                </div>
+              </div>
+
+              <div class="home-image">
+                <img src="./profile.png" alt="Your Name" />
+              </div>
+            </div>
+          </section>
+
+          <section id="about">
+            <h2>About me</h2>
+            <div class="project">
+              <h3>About me</h3>
+              <p>Description of About me</p>
+            </div>
+            <!-- Add more projects -->
+          </section>
+
+          <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+              <h3>Project 1</h3>
+              <p>Description of Project 1</p>
+              <a href="#" target="_blank">View Project</a>
+            </div>
+            <!-- Add more projects -->
+          </section>
+
+          <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Node.js</li>
+              <!-- Add more skills -->
+            </ul>
+          </section>
+
+          <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+
+              <button type="submit">Send Message</button>
+            </form>
+          </section>
+        </main>
+
+        <footer>
+          <p>&copy; Robert Elisc 2024</p>
+        </footer>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
